@@ -5,7 +5,7 @@
   "main": "dist/entry.js",
   "source": "src/entry.js",
   "scripts": {
-    "prepare": "yarn",
+    "postinstall" : "yarn && yarn run build",
     "build": "yarn run build-js && yarn run copy-styles",
     "build-js": "babel src -d dist --ignore **/__tests__",
     "clean": "rimraf dist",
