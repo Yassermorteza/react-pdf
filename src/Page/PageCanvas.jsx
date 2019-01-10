@@ -124,6 +124,7 @@ export class PageCanvasInternal extends PureComponent {
       <canvas
         className="react-pdf__Page__canvas"
         style={{
+          border: '1px solid blue',
           display: 'block',
           userSelect: 'none',
         }}
