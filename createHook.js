@@ -37,7 +37,7 @@ fs.writeFile(".git/hooks/pre-commit", command, err => {
         console.log("Error: ", err);
     }
 
-    console.log("Hook file created.");
+    console.log("\x1b[32m", "Hook file created.");
 });
 
 const ls = spawn('chmod', ['+x', '.git/hooks/pre-commit']);
@@ -51,7 +51,7 @@ ls.stderr.on('data', (data) => {
 });
 
 ls.on('close', (code) => {
-  console.log(`child process exited with code ${code}`);
+  console.log('\x1b[33m%s\x1b[0m', `child process exited with code ${code}`);
 });
 
 
