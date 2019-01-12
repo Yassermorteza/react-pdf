@@ -98,7 +98,7 @@ export class PageCanvasInternal extends PureComponent {
     canvas.width = renderViewport.width;
     canvas.height = renderViewport.height;
 
-    canvas.style.width ="100%" || `${Math.floor(viewport.width)}px`;
+    canvas.style.width = '100%' || `${Math.floor(viewport.width)}px`;
     canvas.style.height = `${Math.floor(viewport.height)}px`;
 
     const renderContext = {
